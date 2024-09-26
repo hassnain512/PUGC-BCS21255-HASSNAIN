@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Faculties</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <link href="assets/img/new-uni-logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script>
+    // Show the Administrator section by default
+    window.onload = function () {
+      document.getElementById('admin').style.display = 'block';
+    };
+
+    function showContent(role) {
+      // Hide all content divs
+      var contents = document.querySelectorAll('.content');
+      contents.forEach(function (content) {
+        content.style.display = 'none';
+      });
+
+      // Show the selected content div
+      document.getElementById(role).style.display = 'block';
+    }
+
+  </script>
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    button {
+      background-color: #03396c;
+      width: 220px;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #05213b;
+    }
+
+    .content {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .content p {
+      color: #666;
+
+    }
+  </style>
+  <!-- =======================================================
+  * Template Name: PUGC
+  * Template URL: https://bootstrapmade.com/PUGC-free-education-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="trainers-page">
+
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/uni-logo.png" alt="">
+        <h1 class="sitename">Pugc</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li class="dropdown"><a href="./courses.html"><span>Courses</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="./it.html">Information Technology</a></li>
+              <li><a href="./bba.html">Business Administration</a></li>
+              <li><a href="./commerce.html">Commerce</a></li>
+              <li><a href="./english.html">English</a></li>
+              <li><a href="./bbf.html">Banking & Finance</a></li>
+              <li><a href="./law.html">Law</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>News</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="./admission.html">Admission 2024</a></li>
+              <li><a href="./notice.html">Notice board</a></li>
+              <li><a href="./download.html">Downloads</a></li>
+              <li><a href="./faculty.html">Faculties</a></li>
+
+            </ul>
+          </li>
+          <li><a href="./socities.html">Societies</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="courses.html">Explore</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Faculties</h1>
+              <p class="mb-0">University teachers play a vital role in shaping the future of students by imparting
+                knowledge, fostering critical thinking, and inspiring a passion for learning. They not only deliver
+                lectures but also engage in research, PUGC students, and contribute to the academic community. Their
+                expertise and dedication help students develop the skills needed to succeed in their careers and
+                contribute to society. University teachers are often seen as role models, guiding students through their
+                academic journey and helping them realize their full potential.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Faculties</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+
+    <button onclick="showContent('admin')">Administrators</button>
+    <button onclick="showContent('faculty')">Faculty</button>
+    <button onclick="showContent('clerk')">Clerks</button>
+
+    <div id="admin" class="content">
+      <h2>Administrators</h2>
+
+      <!-- Trainers Section -->
+      <section id="trainers" class="section trainers">
+
+        <div class="container">
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/umair.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Mr. Umair Ali</h4>
+                <span>Deputy Registrar</span>
+                <p> <i class="fa fa-envelope"></i> umairali1948@hotmail.com <br>
+                  <i class="fa fa-phone"></i> 055-9201224
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/saima.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Ms. Saima Nadeem</h4>
+                <span>Sr. Librarian</span>
+                <p><i class="fa fa-envelope"></i> srlibrarianpugc@gmail.com <br>
+                  <i class="fa fa-phone"></i> 055-9201361
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/sajid-akhtar.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Muhammad Sajid Akhtar</h4>
+                <span>Deputy Registrar</span>
+                <p><i class="fa fa-envelope">sajidakhtarr@pugc.edu.pk</i> <br>
+                  <i class="fa fa-phone"></i> 055-9201227
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/imran-javed.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Mr. Imran Javed
+
+
+
+                </h4>
+                <span> Estate Officer<br></span>
+                <span><i class="fa fa-envelope"></i> iman866@hotmail.com <br>
+                  <i class="fa fa-phone"></i> +92 (0) 55 92 00 98 5</p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/akasha-waraich.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mrs. Akasha Waraich</h4>
+                <span><br>Asstt. Network Administrator</span>
+                <p><i class="fa fa-envelope"></i>akasha_warraich@yahoo.com <br>
+                  <i class="fa fa-phone"></i>+92 (0) 321 64 05 46 5
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/shazid-butt.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Shazib Maqsood Butt</h4>
+                <span> Admin. Officer</span>
+                <p><i class="fa fa-envelope"></i> ursshazib@hotmail.com <br>
+                  <i class="fa fa-phone"> 055-9201225-26
+                  </i>
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/abrar-ahmad.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Abrar Ahmad Khan</h4>
+                <span>Network Administrator</span>
+                <p><i class="fa fa-envelope"></i> na@pugc.edu.pk <br>
+                  <i class="fa fa-phone">055-9201220</i>
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/admin-faculty/shahbaz-cheema.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Muhammad Shahbaz Cheema</h4>
+                <span>PS to Director General</span>
+                <p><i class="fa fa-envelope"></i> shahbaz.cheema@pugc.edu.pk <br>
+                  <i class="fa fa-phone"></i> 055-9201221
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Trainers Section -->
+
+    </div>
+
+    <div id="faculty" class="content">
+      <h2>Faculty</h2>
+      <!-- Trainers Section -->
+      <section id="trainers" class="section trainers">
+
+        <div class="container">
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/naveed-iqbal.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+
+              <div class="member-info text-center">
+                <h4> Prof. Dr. Naveed Iqbal Chaudhry</h4>
+                <span>Professor</span>
+                <p><i class="fa fa-envelope"></i>naveed.iqbal@pugc.edu.pk </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/amir-sohail.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mr. Amer Sohail</h4>
+                <span> Incharge / Assistant Professor</span>
+                <p>M.Phil (Management Scineces), Ph.D (Scholar)
+                  <br><i class="fa fa-envelope"></i> amer.sohail@pugc.edu.pk
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/naveed-ahmed.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Dr. Naveed Ahmad Jhamat</h4>
+                <span>Incharge / Assistant Professor </span>
+                <p> Ph.D in Bioinformatics from SLU <br> Uppsala, Sweden <br><i class="fa fa-envelope"></i>
+                  naveed.jhamat@pugc.edu.pk </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/salman-naseer.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+
+              <div class="member-info text-center">
+                <h4>Dr. Salman Naseer </h4>
+                <span> Assistant Professor</span>
+                <p>Ph.D in Computer and Information Sciences <br> Auckland, New Zealand. <br><i
+                    class="fa fa-envelope"></i>salman@pugc.edu.pk b <br>
+                  <i class="fa fa-phone"></i>+923338201017
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/ghulam-mustafa.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Dr. Ghulam Mustafa</h4>
+                <span>Assistant Professor</span> </span>
+                <p> Ph.D (BIT, China) <br> <i class="fa fa-envelope"></i>gmustafa@pugc.edu.pk
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/miss-farhana.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Miss Farhana Aziz Rana</h4>
+                <span> Incharge / Assistant Professor <br> in Department of Law</span>
+
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/m-younas.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Muhammad Younas </h4>
+                <span>Assistant Professor </span>
+                <p>M.S (Computer Science) <br><i class="fa fa-envelope"></i>younas100@yahoo.com </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/m-saddique.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Dr. Muhammad Siddique Malik </h4>
+                <span>Incharge / Associate Professor </span>
+                <p> Dr. Muhammad Siddique Malik Ph.D. Management Sciences (UTM, Malaysia) <br><i
+                    class="fa fa-envelope"></i> dr.siddique@pugc.edu.pk
+                  <br> <i class="fa fa-phone"></i> 0559201363
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/zeeshan-arshad.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Zeeshan Arshad </h4>
+                <span> Lecturer </span>
+                <p>PhD (Scholar) - On Study Leave MS (CS), M.SC. (IT) <br><i
+                    class="fa fa-envelope"></i>Zeeshan.arshad@pugc.edu.pk <br> <i class="fa fa-phone"></i>+92 332
+                  8159859
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/muzammil-khurshid.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Dr. Muzammil Khurshid</h4>
+                <span> Assistant Professor</span>
+                <p> Ph.D (Finance) Business School of Dokuz Eylul University, Turkey <br><i class="fa fa-envelope"></i>
+                  muzammil.khurshid@pugc.edu.pk
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/wasim-ul-rehman.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Dr. Wasim ul Rehman (Rana) </h4>
+                <span> Incharge Department / Assistant Professor</span>
+                <p> M.Com (Hailey College of Commerce - PU) <br> M.Phil Commerce & Finance (Pk) <br>
+                  Ph.D Business Administration
+                  <br><i class="fa fa-envelope"></i> wasim.rehman@pugc.edu.pk
+                  <br> <i class="fa fa-phone"></i>+92 313 4522135 <br> <i class="fa fa-phone"></i> +92 343 4050646
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/waqas-rafiq.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Waqas Rafiq </h4>
+                <span>Lecturer</span>
+
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/rabia-iram.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+
+
+              <div class="member-info text-center">
+                <h4> Miss Rabia Iram </h4>
+                <span> Lecturer</span>
+                <p>
+                  M.Phil (English)
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/teachers/sarfaraz-khan.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Muhammad Sarfraz Khan </h4>
+                <span> Lecturer</span>
+                <p> M.Com (1.5 Years) <br> <i class="fa fa-envelope"></i>sarfraz.khan@pugc.edu.pk </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/teachers/amir-shahzad.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Aamer Shahzad </h4>
+                <span>Lecturer </span>
+                <p> PhD (Scholar) MS Management Sciences (Finance) <br> B.Com (Hons) Gold Medalist</p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/teachers/naheeda-ali.jpg " class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Miss Naheeda Ali </h4>
+                <span>Assistant Professor in Department of Law </span>
+                <p> <i class="fa fa-envelope"></i>naheeda.ali@pugc.edu.pk </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/teachers/hafiz-imran.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Mr. Hafiz Muhammad Imran Akram </h4>
+                <span>Incharge / Assistant Professor </span>
+                <p> M.Com (PU), MS (COMSATS), Ph.D (Scholar) <br><i class="fa fa-envelope"></i> imranakram76@yahoo.com
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/teachers/musarat-nawaz.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Mr. Musarat Nawaz </h4>
+                <span> Assistant Professor</span>
+                <p>M.Phil., Ph.D (Scholar) </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/teachers/bilal-ghaffar.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Mr. Bilal Ghaffar </h4>
+                <span> Lecturer</span>
+                <p>M.Com (Hons.) Gold Medalist Ph.D (Scholar) </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/teachers/miss-aadila.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Miss Aadila Hussain </h4>
+                <span> Incharge / Lecturer </span>
+                <p>M.Phil. (Linguistics), Ph.D (Scholar) <br><i class="fa fa-envelope"></i> aadilahussain12@gamil.com
+                </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/teachers/hassan-zia.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Mr. Muhammad Hassan Zia </h4>
+                <span> Assistant Professor in Department of Law </span>
+                <p><i class="fa fa-envelope"></i>hasanzia489@hotmail.com </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/teachers/m-abdullah.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4> Mr. Muhammad Abdullah </h4>
+                <span>Lecturer </span>
+                <p><i class="fa fa-envelope"></i> muhammad.abdullah@pugc.edu.pk <br> <i class="fa fa-phone"></i>
+                  0334-963879 </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+              <div class="member-img">
+                <img src="assets/img/teachers/ihsan_ur_rehman.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Hafiz Ihsan Ur Rehman</h4>
+                <span> Lecturer<br></span>
+                <p> MS (Management Sciences), Ph.D (Scholar)</p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/teachers/kamran-ali.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Kamran Ali </h4>
+                <span>Lecturer </span>
+                <p>M.Phil, Ph.D (Scholar) </p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/teachers/abrar-hussain.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4> Mr. Abrar Hussain </h4>
+                <span>Lecturer in Department of Business Administration </span>
+                <p> Ph.D (Scholar) <br> M.Sc. Finance, University of Gothenburg, Sweden <br><i
+                    class="fa fa-envelope"></i> abrarmbm@gmail.com</p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+              <div class="member-img">
+                <img src="assets/img/teachers/mam-safia.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Hafiza Safia Shoukat </h4>
+                <span>Lecturer</span>
+              </div>
+            </div><!-- End Team Member -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Trainers Section -->
+
+    </div>
+
+    <div id="clerk" class="content">
+      <h2>No Clerk found</h2>
+      <a href="./faculty.html"><button> Go back</button> </a>
+    </div>
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PUGC</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Near Ali Pur Chowk Rawalpindi Bypass</p>
+            <p>Gujranwala, Pakistan.</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+92 (0) 55 92 01 22 2</span></p>
+            <p><strong>Email:</strong> <span>
+              infocell@pu.edu.pk</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./socities.html">Societies</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>  
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="./it.html">Information Technology</a></li>
+            <li><a href="./bba.html">Business Administration</a></li>
+            <li><a href="./commerce.html">Commerce</a></li>
+            <li><a href="./bbf.html">Banking & finance</a></li>
+            <li><a href="./law.html">Law</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">University of the Punjab, Gujranwala Campus</strong>
+        <span>All Rights Reserved</span>
+      </p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://github.com/hassnain512">Hassnain Maitla🖤</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
